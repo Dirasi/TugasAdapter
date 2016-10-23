@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">The Adapter</string>
+    <string name="student_list">List of Students</string>
+    <string name="teacher_list">List of Lecturers</string>
+
+</resources>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/custom_student"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/id"
+                android:text="Id :"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:textColor="#FF4081"
+                android:textSize="19dp"/>
+
+            <EditText
+                android:id="@+id/edit_id"
+                android:hint="Id"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_margin="8dp"
+                android:layout_toRightOf="@+id/no"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/noreg"
+                android:text="No. Reg :"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/no"
+                android:textColor="#FF4081"
+                android:textSize="19dp"/>
+            <EditText
+                android:id="@+id/edit_noreg"
+                android:hint="Nomor Registrasi"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_margin="8dp"
+                android:layout_toRightOf="@+id/noreg"
+                android:layout_below="@+id/edit_no"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/name"
+                android:text="Name :"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/noreg"
+                android:textColor="#FF4081"
+                android:textSize="19dp"/>
+            <EditText
+                android:id="@+id/edit_name"
+                android:hint="Nama Siswa"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_margin="8dp"
+                android:layout_toRightOf="@+id/nama"
+                android:layout_below="@+id/edit_noreg"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/mail"
+                android:text="E-Mail :"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/nama"
+                android:textColor="#FF4081"
+                android:textSize="19dp"/>
+            <EditText
+                android:id="@+id/edit_mail"
+                android:hint="E-mail"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:layout_toRightOf="@+id/mail"
+                android:layout_below="@+id/edit_nama"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/phone"
+                android:text="Phone :"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/mail"
+                android:textColor="#FF4081"
+                android:textSize="19dp"/>
+            <EditText
+                android:id="@+id/edit_phone"
+                android:hint="Nomor Telepon"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:layout_toRightOf="@+id/phone"
+                android:layout_below="@+id/edit_mail"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:src="@drawable/ic_clear_black_24dp"
+        android:id="@+id/button_Cancel"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="24dp"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:src="@drawable/ic_done_black_24dp"
+        android:id="@+id/button_Done"
+        android:layout_alignBottom="@id/button_Cancel"
+        android:layout_toLeftOf="@id/button_Cancel"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/button_Cancel"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="75dp">
+    </RelativeLayout>
+</RelativeLayout>
